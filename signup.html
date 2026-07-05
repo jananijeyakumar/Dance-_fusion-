@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up | Dance Fusion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="utility-bar">
+    <div class="utility-inner">
+      <span id="greeting">Welcome!</span>
+      <span id="liveClock"></span>
+    </div>
+  </div>
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">DF</span>
+      <span class="logo-text">Dance<em>Fusion</em></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="services.html" class="nav-link">Programs</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="testimonials.html" class="nav-link">Testimonials</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+      <div class="nav-auth">
+        <a href="login.html" class="btn btn-outline">Login</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+      </div>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Create Your Account</h1>
+      <p>Join Dance Fusion and start your journey today.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <form class="form-card" id="signupForm" novalidate style="max-width:640px;">
+        <p class="eyebrow" style="text-align:center;">New Member</p>
+        <h2 style="text-align:center; margin-bottom:26px; font-weight:800;">Sign Up For <span class="accent-text">Dance Fusion</span></h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="suName">Full Name</label>
+            <input type="text" id="suName" placeholder="Jane Doe" required>
+            <span class="error-msg" id="err-suName"></span>
+          </div>
+          <div class="form-group">
+            <label for="suEmail">Email Address</label>
+            <input type="email" id="suEmail" placeholder="jane@example.com" required>
+            <span class="error-msg" id="err-suEmail"></span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="suPassword">Password</label>
+            <input type="password" id="suPassword" placeholder="Min. 6 characters" required>
+            <span class="error-msg" id="err-suPassword"></span>
+          </div>
+          <div class="form-group">
+            <label for="suConfirm">Confirm Password</label>
+            <input type="password" id="suConfirm" placeholder="Re-enter password" required>
+            <span class="error-msg" id="err-suConfirm"></span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="suStyle">Preferred Dance Style</label>
+            <select id="suStyle" required>
+              <option value="" disabled selected>Select a style</option>
+              <option>Hip-Hop</option>
+              <option>Contemporary</option>
+              <option>Bharatanatyam</option>
+              <option>Salsa</option>
+              <option>Bollywood</option>
+              <option>Freestyle</option>
+              <option>Western</option>
+              <option>Folk Dance</option>
+            </select>
+            <span class="error-msg" id="err-suStyle"></span>
+          </div>
+        </div>
+
+        <div style="margin-bottom:20px; font-size:.85rem; color:var(--text-muted);">
+          <label style="display:flex; align-items:flex-start; gap:8px; cursor:pointer;">
+            <input type="checkbox" id="suTerms" style="width:auto; margin-top:3px;">
+            <span>I agree to the Terms of Service and Privacy Policy.</span>
+          </label>
+          <span class="error-msg" id="err-suTerms"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+        <div class="success-box" id="signupSuccess">Account created! Welcome to Dance Fusion.</div>
+        <p class="form-note">Already have an account? <a href="login.html">Login here</a></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="logo">
+        <span class="logo-mark">DF</span>
+        <span class="logo-text">Dance<em>Fusion</em></span>
+      </a>
+      <p style="margin-top:14px;">Premium dance training across 15+ styles. Where passion meets performance, every class.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Programs</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="testimonials.html">Testimonials</a>
+    </div>
+    <div class="footer-col">
+      <h4>Account</h4>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>14 Rhythm Avenue, Chennai 600040</p>
+      <p>+91 98765 43210</p>
+      <p>hello@dancefusion.studio</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Dance Fusion. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

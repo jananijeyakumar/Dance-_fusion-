@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Dance Fusion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="utility-bar">
+    <div class="utility-inner">
+      <span id="greeting">Welcome!</span>
+      <span id="liveClock"></span>
+    </div>
+  </div>
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">DF</span>
+      <span class="logo-text">Dance<em>Fusion</em></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="services.html" class="nav-link">Programs</a>
+      <a href="gallery.html" class="nav-link active">Gallery</a>
+      <a href="testimonials.html" class="nav-link">Testimonials</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+      <div class="nav-auth">
+        <a href="login.html" class="btn btn-outline">Login</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+      </div>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Our Gallery</h1>
+      <p>Moments in motion from our studios and stages.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <p class="eyebrow">Snapshots</p>
+      <h2 class="page-title">Life At <span class="accent-text">Dance Fusion</span></h2>
+      <p class="page-sub">Click any photo to view it larger.</p>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=500&q=60" alt="Hip-hop rehearsal"><div class="gi-caption">Hip-Hop Rehearsal</div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?auto=format&fit=crop&w=500&q=60" alt="Classical dance"><div class="gi-caption">Bharatanatyam Recital</div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=500&q=60" alt="Salsa night"><div class="gi-caption">Salsa Social Night</div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=500&q=60" alt="Annual showcase"><div class="gi-caption">Annual Showcase</div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1545959570-a94084071b5d?auto=format&fit=crop&w=500&q=60" alt="Bollywood group"><div class="gi-caption">Bollywood Group Act</div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=500&q=60" alt="Contemporary solo"><div class="gi-caption">Contemporary Solo</div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1508700346682-e9b7cccdb9c3?auto=format&fit=crop&w=500&q=60" alt="Folk performance"><div class="gi-caption">Folk Dance Festival</div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1546427660-eb346c4a1a1c?auto=format&fit=crop&w=500&q=60" alt="Western jazz"><div class="gi-caption">Western Jazz Class</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="logo">
+        <span class="logo-mark">DF</span>
+        <span class="logo-text">Dance<em>Fusion</em></span>
+      </a>
+      <p style="margin-top:14px;">Premium dance training across 15+ styles. Where passion meets performance, every class.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Programs</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="testimonials.html">Testimonials</a>
+    </div>
+    <div class="footer-col">
+      <h4>Account</h4>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>14 Rhythm Avenue, Chennai 600040</p>
+      <p>+91 98765 43210</p>
+      <p>hello@dancefusion.studio</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Dance Fusion. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
