@@ -103,14 +103,6 @@ Allows new users to create an account.
 - User Profile Management
 - Email Notifications
 
----
-
-## 📷 Screenshots
-
-(Add screenshots of your Home Page, Gallery, Services, and Contact Page here.)
-
----
-
 ## 👩‍💻 Developed By
 
 **Janani J**
